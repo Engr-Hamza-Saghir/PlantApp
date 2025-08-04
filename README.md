@@ -18,11 +18,10 @@ This is a simple plant monitoring app built using React Native and Expo. It allo
 3. Start the Expo development server:
    ```
    npx expo start
-
-   for mobile install (i ran it on Samsung S10 Android)
-   =>install expo go from playstore
-   =>Open nd Scan QR code from terminal shown in VS Code
    ```
+4. Run the app:
+   - On mobile: Install **Expo Go** from the Play Store (I ran it on Samsung S10)
+   - Scan the QR code shown in the terminal to open the app
 
 ## Project Structure
 
@@ -40,6 +39,7 @@ plant-monitoring-app/
       => mockData.js
 => assets/
       => plants/ (local images i used )
+      => screenshots/ (for screenshots of dashboard and add plant screen)
 => App.js
 => package.json
 => README.md
@@ -47,7 +47,7 @@ plant-monitoring-app/
 
 ## Mock API
 
-The app uses [mockapi.io](https://mockapi.io/projects/688875bdadf0e59551ba0845) for GET and POST operations.
+GET and POST operations are handled through [mockapi.io](https://mockapi.io/projects/688875bdadf0e59551ba0845). Only plant name and type are submitted through POST; vitals like sunlight, pH, etc. are generated randomly using JavaScript.
 
 ## Component Structure
 
@@ -58,7 +58,21 @@ The app uses [mockapi.io](https://mockapi.io/projects/688875bdadf0e59551ba0845) 
 
 ## Features
 
-- View list of plants, will get only data without picture, added picture after getting by using .Map and then desplay.
+- View list of plants, will get only data without picture, added picture after getting by using .Map and then display.
 - Add new plant with name and type by user itself.
-- Randomly generated data for pH, water, humidity, sunlight (creating them by using Math.random() ).
-- Web and mobile support (via Expo).
+- Randomly generated data for pH, water, humidity, sunlight (creating them by using Math.random()).
+- Works on both Android and Web via Expo
+- Plant image applied manually on each fetch
+
+## Screenshots
+
+### Dashboard
+
+![Dashboard Screenshot 1](./assets/screenshots/Dashboardss1.jpg)
+![Dashboard Screenshot 2](./assets/screenshots/Dashboardss2.jpg)
+
+### Add Plant
+
+![Add Plant Screenshot 1](./assets/screenshots/AddPlantss1.jpg)
+![Add Plant Screenshot 2](./assets/screenshots/AddPlantss2.jpg)
+![Add Plant Screenshot 3](./assets/screenshots/AddPlantss3.jpg)
