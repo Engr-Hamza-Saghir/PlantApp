@@ -22,7 +22,7 @@ This is a simple plant monitoring app built using React Native and Expo. It allo
 4. Run the app:
    - On mobile: Install **Expo Go** from the Play Store (I ran it on Samsung S10)
    - Scan the QR code shown in the terminal to open the app
-   - For web git W on terminal
+   - For web hit W on terminal
 
 ## Project Structure
 
