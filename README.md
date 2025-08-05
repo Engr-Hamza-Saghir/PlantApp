@@ -22,6 +22,7 @@ This is a simple plant monitoring app built using React Native and Expo. It allo
 4. Run the app:
    - On mobile: Install **Expo Go** from the Play Store (I ran it on Samsung S10)
    - Scan the QR code shown in the terminal to open the app
+   - For web git W on terminal
 
 ## Project Structure
 
@@ -47,7 +48,7 @@ plant-monitoring-app/
 
 ## Mock API
 
-GET and POST operations are handled through [mockapi.io](https://mockapi.io/projects/688875bdadf0e59551ba0845). Only plant name and type are submitted through POST; vitals like sunlight, pH, etc. are generated randomly using JavaScript.
+GET and POST operations are handled through [mockapi.io](https://mockapi.io/projects/688875bdadf0e59551ba0845). Vitals like sunlight, pH, etc. are generated randomly using JavaScript, Only plant name and type are getting by user and then submitted all data through POST.
 
 ## Component Structure
 
@@ -63,6 +64,12 @@ GET and POST operations are handled through [mockapi.io](https://mockapi.io/proj
 - Randomly generated data for pH, water, humidity, sunlight (creating them by using Math.random()).
 - Works on both Android and Web via Expo
 - Plant image applied manually on each fetch
+
+## UI idea by
+```
+https://ca.pinterest.com/pin/118501033935775513
+```
+
 
 ## Screenshots
 
