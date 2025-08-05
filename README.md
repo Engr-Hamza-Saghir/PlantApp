@@ -65,6 +65,24 @@ GET and POST operations are handled through [mockapi.io](https://mockapi.io/proj
 - Works on both Android and Web via Expo
 - Plant image applied manually on each fetch
 
+## Docker
+- Install WSL for docker by using this command in Powershell
+```
+wsl --update
+```
+- Install docker for windows
+- After isntalling Create the docker file inside the plantapp folder
+- Now after save that file run this command, it will create image for docker
+```
+docker build -t plantapp-image .
+```
+- In last run this on powershell
+```
+docker run -it --rm -p 19000:19000 -v "${PWD}:/app" --env EXPO_PORT=19000 plantapp-image
+```
+
+
+
 ## UI idea by
 ```
 https://ca.pinterest.com/pin/118501033935775513
